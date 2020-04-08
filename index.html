@@ -1,17 +1,475 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title>HTML5</title>
-  <!--[if IE]>
-   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <style>
-   article, aside, details, figcaption, figure, footer,header,
-   hgroup, menu, nav, section { display: block; }
-  </style>
- </head>
- <body>
-  <p>Привет, мир</p>
- </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Раздельный сбор отходов в Киевской областе</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1093683597698665');
+            fbq('track', 'PageView');
+                fbq('track', 'Contact');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1093683597698665&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <header class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="index.html" title="logo">
+                        <img src="img/logo.png" class="img-fluid logo">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 ml-auto">
+                    <p class="phone">
+                        <img  src="img/phone.png" alt="phone" class="img-fluid">
+                        <a id="contactButton" href="tel:+380979398383"> 097 - 939 - 83 - 83</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid header-menu">
+            <div class="row justify-content-center">
+                <nav class="">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" title="link">Главная</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Закупки
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="priemmakulatury.html">Макулатуры</a>
+                                <a class="dropdown-item" href="priemstekla.html">Стеклобоя</a>
+                                <a class="dropdown-item" href="zakupkiplastmas.html">Пластмасс</a>
+                                <a class="dropdown-item" href="mikroshem.html">Микросхем</a>
+                                <a class="dropdown-item" href="priemmetala.html">Цветных металов</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Услуги
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="samovyvoz.html">Самовывоз вторсырья</a>
+                                <a class="dropdown-item" href="utilizaciya.html">Утилизация</a>
+                                <a class="dropdown-item" href="samovyvoz.html">Порезка, демонтаж</a>
+                                <a class="dropdown-item" href="samosval.html">Услуги самосвала</a>
+                                    </div>
+                            </li>
+                        <li class="nav-item"><a class="nav-link active" href="contacts.html" title="link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="row justify-content-center forpadding">
+                <div class="col-md-6 col-12">
+                    <h1 class="bord">Что мы принимаем?</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-3 col-sm-3 col-6 mx-auto">                
+                    <a href="#inf1" class="btn btn-primary-1" id="but1"><img src="img/test.png" class="img-fluid"><span>Бумага</span></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                        <a href="#inf2" class="btn btn-primary-2" id="but2"><img src="img/test2.png" class="img-fluid">Стекло</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                    <a href="#inf3" class="btn btn-primary-3" id="but3"><img src="img/test3.png" class="img-fluid">Пластик</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                    <a href="#inf4" class="btn btn-primary-4" id="but4"><img src="img/test4.png" class="img-fluid">Пленка</a>
+                </div>
+            </div>
+                <section class="infozone">
+                <div id="inf1">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body ">
+                                    <h5>MC - 2А</h5>
+                                    <ul>
+                                        <li>Белая бумага</li>
+                                        <li>Бумага А4</li>
+                                        <li>Офисная печатная бумага</li>
+                                    </ul>
+                                </div>
+                                <img src="img/office.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body ">
+                                    <h5>МС - 5Б</h5>
+                                    <ul>
+                                        <li>Гофракартон, коробки, тубусы</li>
+                                        <li>Бумага в рулонах</li>
+                                    </ul>
+                                </div>
+                                <img src="img/box1.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body ">
+                                    <h5>MC - 7Б</h5>
+                                    <ul>
+                                        <li>Книги</li>
+                                        <li>Журналы</li>
+                                        <li>Тетрадки и т.д.</li>
+                                    </ul>
+                                </div>
+                                <img src="img/knigi.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="inf2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-sm-5 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Цветное стекло</h5>
+                                    <ul>
+                                        <li>Все виды стеклянных бутылок, стеклотары и других стеклянных изделий</li>
+                                    </ul>
+                                    <p>(без земли, воды, чистые)<br>
+                                        <span>Нельзя:</span> зеркала, автомобильные стекла, керамику, стекла с пленкой, металлом</p>
+                                </div>
+                                <img src="img/steklo3.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Прозрачное (белое) стекло</h5>
+                                    <ul>
+                                        <li>Прозрачное оконное (белое) стекло</li>
+                                        <li>Прозрачные бутылки (с этикеткой, целые и битые)</li>
+                                        <li>Стеклобой</li>
+                                    </ul>
+                                </div>
+                                <img src="img/steklo2.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inf3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>PE, HDPE, LDPE</h5>
+                                    <ul>
+                                        <li>Канистры</li>
+                                        <li>Флаконы из под шампуней, моющих средств, бытовой химии</li>
+                                        <li>И другие изделия из PE (полиэтилена)</li>
+                                    </ul>
+                                </div>
+                                <img src="img/pe1.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>PP</h5>
+                                    <ul>
+                                        <li>Пластмассовые ведра, тазики, подносы, вешалки, ручки, крышки</li>
+                                        <li>И другие изделия из PP (полипропилена)</li>
+                                        <li>Отходы после производства</li>
+                                    </ul>
+                                </div>
+                                <img src="img/pp1.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>PET</h5>
+                                    <ul>
+                                        <li>Пластиковые PET-бутылки из под воды</li>
+                                        <li>Брак и технические отходы PET бутылок</li>
+                                        <li>Брак преформ ПЭТ</li>
+                                    </ul>
+                                </div>
+                                <img src="img/pet1.jpg" alt="petbottle" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="inf4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Полиэтиленовая плотная</h5>
+                                    <ul>
+                                        <li>Цветная</li>
+                                        <li>Строительная</li>
+                                        <li>Тепличная</li>
+                                    </ul>
+                                    <p>(Без наличия земли, воды, жира, красок и т.д., чистая, сухая)</p>
+                                </div>
+                                <img src="img/poly1.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Стрейч-пленка</h5>
+                                    <ul>
+                                        <li>Прозрачная упаковочная стрейч-пленка</li>
+                                        <li>Упаковочная прозрачная пленка, пузырчатая пленка</li>
+                                    </ul>
+                                </div>
+                                <img src="img/poly0.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Упаковочная ПВД пленка</h5>
+                                    <ul>
+                                        <li>Пленка упаковочная ВД<br>
+                                            (высокого давления)</li>
+                                        <li>Пленка упаковочная (термоусадочная) </li>
+                                    </ul>
+                                </div>
+                                <img src="img/poly2.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inf5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Микросхемы</h5>
+                                    <ul>
+                                        <li>Радиодетали, радиоплаты</li>
+                                        <li>Микросхемы</li>
+                                    </ul>
+                                    <p>(без пластика, без метала, чистые)</p>
+                                </div>
+                                <img src="img/mikroshema.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inf6">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5>Медь</h5>
+                                    <ul>
+                                        <li>Цветные металлы</li>
+                                        <li>Стружка, сплавы, куски, листы</li>
+                                        <li>Отходы производства</li>
+                                        <li>Баночки</li>
+                                    </ul>
+                                </div>
+                                <img src="img/medy.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Алюминий</h5>
+                                    <ul>
+                                        <li>Куски</li>
+                                        <li>Стружка</li>
+                                        <li>Отходы производства</li>
+                                        <li>Баночки</li>
+                                    </ul>
+                                </div>
+                                <img src="img/alumin.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Латунь</h5>
+                                    <ul>
+                                        <li>Трубы, куски</li>
+                                        <li>Стружка</li>
+                                        <li>Технические отходы производства</li>
+                                    </ul>
+                                </div>
+                                <img src="img/latun.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="inf7">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5>Пластмассовые ящики</h5>
+                                    <ul>
+                                        <li>Пластмассовые PE ящики<br>
+                                            (Пивные, молочные, винные, хлебные и другие)</li>
+                                        <li>Все виды пластмассовых поддонов, палетов и других изделий из PE (полиетилена)</li>
+                                    </ul>
+                                    <p>Ящики должны быть пустые, чистые, без метала, земли, скотча<br>
+                                        Можно в поломанном виде</p>
+                                </div>
+                                <img src="img/yashchik.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inf8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Чугунные</h5>
+                                    <ul>
+                                        <li>Батареи</li>
+                                        <li>Котлы</li>
+                                        <li>Ванные</li>
+                                        <li>Плиты</li>
+                                        <li>Трубы</li>
+                                    </ul>
+                                </div>
+                                <img src="img/batareya.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 inf_more">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <h5>Автомобильные</h5>
+                                    <ul>
+                                        <li>Алюминиевые радиаторы</li>
+                                        <li>Медно-латунные радиаторы, стружка, соты от них</li>
+                                    </ul>
+                                    <p>В чистом, разобранном виде</p>
+                                </div>
+                                <img src="img/radiator.jpg" alt="" class="card-img-bottom mx-auto d-block img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row justify-content-center forpadding">
+                <div class="col-md-3 col-sm-3 col-6">                
+                    <a href="#inf5" class="btn btn-primary-5" id="but5"><img src="img/test5.png" class="img-fluid">Микросхемы</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                        <a href="#inf6" class="btn btn-primary-6" id="but6"><img src="img/test6_1.png" class="img-fluid">Алюминий</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                    <a href="#inf7" class="btn btn-primary-7" id="but7"><img src="img/test7.png" class="img-fluid">Ящики</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">                
+                    <a href="#inf8" class="btn btn-primary-8" id="but8"><img src="img/test8_1.png" class="img-fluid">Радиаторы</a>
+                </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="priorities">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1>Наши преимущества</h1>
+                    </div>
+                    <div class="col-md-3 col-6 priorities__item">
+                        <div class="priorities__item__img"><img src="img/icon/libra.png"></div>
+                        <div class="priorities__item__text">Честный вес</div>
+                    </div>
+                    <div class="col-md-3 col-6 priorities__item">
+                        <div class="priorities__item__img"><img src="img/icon/car.png"></div>
+                        <div class="priorities__item__text">Бесплатный вывоз</div>
+    
+                    </div>
+                    <div class="col-md-3 col-6 priorities__item">
+                        <div class="priorities__item__img"><img src="img/icon/pay.png"></div>
+                        <div class="priorities__item__text">Удобная форма оплаты</div>
+    
+                    </div>
+                    <div class="col-md-3 col-6 priorities__item">
+                        <div class="priorities__item__img"><img src="img/icon/highprice.png"></div>
+                        <div class="priorities__item__text">Высокие цены</div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </main>
+
+    <!--        TEST    -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>Где мы находимся</h1>
+            <iframe src="https://snazzymaps.com/embed/179256" width="100%" height="600px" style="border:none;"></iframe>
+        </div>
+    </div>
+
+
+    <!--        END TEST    -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <a href="index.html" title="logo">
+                        <img src="img/logo.png" class="img-fluid footer-logo">
+                    </a>
+                </div>
+                <div class="col-md-5 col-6 sociale">
+                    <a href="https://www.olx.ua/obyavlenie/priem-vyvoz-vtorsyrya-plastika-metala-plenka-makulatura-steklo-bumaga-IDmwJQQ.html" title="olx">
+                        <img src="img/olx.png" class="img-fluid olx">
+                    </a>
+                    <a href="https://instagram.com/za_eco_ukr?igshid=1mpkkdqqm6jri" title="olx">
+                        <img src="img/instagram.png" class="img-fluid insta">
+                    </a>
+                </div>
+                <div class="col-md-4 footer-phone">
+                    <p class="">
+                        <img src="img/phone.png" alt="phone" class="img-fluid">
+                        <a id="contactButton" href="tel:+380979398383"> 097 - 939 - 83 - 83</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
+</body>
 </html>
